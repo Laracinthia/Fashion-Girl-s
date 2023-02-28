@@ -11,7 +11,23 @@ import { FooterComponent } from './footer/footer.component';
 import { RegistroComponent } from './registro/registro.component';
 import { SesionComponent } from './sesion/sesion.component';
 import { CargarscriptsService } from './cargarscripts.service';
+import { RouterModule,Routes } from '@angular/router';
+import { MujerComponent } from './content/mujer/mujer.component';
+import { HombreComponent } from './content/hombre/hombre.component';
+import { RopadetemporadaComponent } from './content/ropadetemporada/ropadetemporada.component';
+import { NovedadesComponent } from './content/novedades/novedades.component';
+import { NinosComponent } from './content/ninos/ninos.component';
+import { ContactComponent } from './content/contact/contact.component';
 
+const appRoutes: Routes = [
+  {path : 'inicio', component : InicioComponent},
+  {path : 'mujer',component : MujerComponent},
+  {path : 'hombre',component : HombreComponent},
+  {path : 'niños',component : NinosComponent},
+  {path : 'ropa de temporada',component : RopadetemporadaComponent},
+  {path : 'novedades',component : NovedadesComponent},
+  {path : 'contact',component : ContactComponent}
+]
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,11 +37,18 @@ import { CargarscriptsService } from './cargarscripts.service';
     InicioComponent,
     FooterComponent,
     RegistroComponent,
-    SesionComponent
+    SesionComponent,
+    MujerComponent,
+    HombreComponent,
+    RopadetemporadaComponent,
+    NovedadesComponent,
+    NinosComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    RouterModule.forRoot(appRoutes,{enableTracing:true})
   ],
   providers: [
     CargarscriptsService
