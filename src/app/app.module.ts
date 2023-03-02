@@ -18,6 +18,11 @@ import { RopadetemporadaComponent } from './content/ropadetemporada/ropadetempor
 import { NovedadesComponent } from './content/novedades/novedades.component';
 import { NinosComponent } from './content/ninos/ninos.component';
 import { ContactComponent } from './content/contact/contact.component';
+import { ExploraComponent } from './content/explora/explora.component';
+import { RebajasComponent } from './content/rebajas/rebajas.component';
+import { AccesoriosComponent } from './content/accesorios/accesorios.component';
+import { ZapatosComponent } from './content/zapatos/zapatos.component';
+import { RopadeportivaComponent } from './content/ropadeportiva/ropadeportiva.component';
 
 const appRoutes: Routes = [
   {path : 'inicio', component : InicioComponent},
@@ -26,7 +31,12 @@ const appRoutes: Routes = [
   {path : 'niños',component : NinosComponent},
   {path : 'ropa de temporada',component : RopadetemporadaComponent},
   {path : 'novedades',component : NovedadesComponent},
-  {path : 'contact',component : ContactComponent}
+  {path : 'contact',component : ContactComponent},
+  {path : 'explora',component : ExploraComponent},
+  {path : 'rebajas', component : RebajasComponent},
+  {path : 'accesorios', component : AccesoriosComponent},
+  {path : 'zapatos', component : ZapatosComponent},
+  {path : 'ropa deportiva', component : RopadeportivaComponent}
 ]
 @NgModule({
   declarations: [
@@ -43,7 +53,11 @@ const appRoutes: Routes = [
     RopadetemporadaComponent,
     NovedadesComponent,
     NinosComponent,
-    ContactComponent
+    ContactComponent,
+    RebajasComponent,
+    AccesoriosComponent,
+    ZapatosComponent,
+    RopadeportivaComponent
   ],
   imports: [
     BrowserModule,

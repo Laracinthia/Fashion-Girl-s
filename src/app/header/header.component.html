@@ -11,25 +11,19 @@
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a class="nav-link scrollto active" href="#hero">Inicio</a></li>
-          <li><a class="nav-link scrollto" href="#about">Mujer</a></li>
-          <li><a class="nav-link scrollto" href="#services">Hombre</a></li>
-          <li><a class="nav-link scrollto " href="#portfolio">Niños</a></li>
-          <li><a class="nav-link scrollto" href="#team">Ropa de temporada</a></li>
+          <li><a class="nav-link scrollto active" [routerLink]="['inicio']">Inicio</a></li>
+          <li><a class="nav-link scrollto" [routerLink]="['mujer']">Mujer</a></li>
+          <li><a class="nav-link scrollto" [routerLink]="['hombre']">Hombre</a></li>
+          <li><a class="nav-link scrollto " [routerLink]="['niños']">Niños</a></li>
+          <li><a class="nav-link scrollto" [routerLink]="['ropa de temporada']">Ropa de temporada</a></li>
           <li class="dropdown"><a href="#"><span>Novedades</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
-              <li><a href="#">Explora</a></li>
-              <li class="dropdown"><a href="#"><span>Rebajas</span> <i class="bi bi-chevron-right"></i></a>
-                <ul>
-                  <li><a href="#">Ofertas especiales</a></li>
-                  <li><a href="#">Comprar por categoria</a></li>
-                  <li><a href="#">Comprar por precio</a></li>
-                  <li><a href="#">Marcas</a></li>
-                </ul>
+              <li><a [routerLink]="['explora']">Explora</a></li>
+              <li><a [routerLink]="['rebajas']"><span>Rebajas</span></a>
               </li>
-              <li><a href="#">Accesorios</a></li>
-              <li><a href="#">Zapatos</a></li>
-              <li><a href="#">Ropa deportiva</a></li>
+              <li><a [routerLink]="['accesorios']">Accesorios</a></li>
+              <li><a [routerLink]="['zapatos']">Zapatos</a></li>
+              <li><a [routerLink]="['ropa deportiva']">Ropa deportiva</a></li>
             </ul>
           </li>
           <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
