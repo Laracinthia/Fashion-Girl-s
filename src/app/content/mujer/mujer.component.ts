@@ -6,6 +6,7 @@ import { CargarscriptsService } from 'src/app/cargarscripts.service';
   styleUrls: ['./mujer.component.css']
 })
 export class MujerComponent {
+
   
     constructor(private cargarscripts: CargarscriptsService) {
       cargarscripts.carga([

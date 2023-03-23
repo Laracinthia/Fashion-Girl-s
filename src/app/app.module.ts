@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { AngularFireModule} from '@angular/fire/compat';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
@@ -36,7 +36,8 @@ const appRoutes: Routes = [
   {path : 'rebajas', component : RebajasComponent},
   {path : 'accesorios', component : AccesoriosComponent},
   {path : 'zapatos', component : ZapatosComponent},
-  {path : 'ropa deportiva', component : RopadeportivaComponent}
+  {path : 'ropa deportiva', component : RopadeportivaComponent},
+  {path : 'sesion', component : SesionComponent}
 ]
 @NgModule({
   declarations: [
@@ -63,7 +64,16 @@ const appRoutes: Routes = [
     BrowserModule,
     AppRoutingModule,
     RouterModule.forRoot(appRoutes,{enableTracing:true}),
-    FormsModule
+    FormsModule,
+    AngularFireModule.initializeApp({
+      apiKey: "AIzaSyBPGLFsGz3i0-Yhrr26dL6x5C-QjjbKebE",
+      authDomain: "fashion-girl-s.firebaseapp.com",
+      projectId: "fashion-girl-s",
+      storageBucket: "fashion-girl-s.appspot.com",
+      messagingSenderId: "124032872294",
+      appId: "1:124032872294:web:7a7d6d63979f839db7a2a7",
+      measurementId: "G-J5KV8S6Q21"
+    })
   ],
   providers: [
     CargarscriptsService

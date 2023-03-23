@@ -3,7 +3,7 @@ import { CargarscriptsService } from 'src/app/cargarscripts.service';
 @Component({
   selector: 'app-hombre',
   templateUrl: './hombre.component.html',
-  styleUrls: ['./hombre.component.css']
+  styleUrls: ['./hombre.component.css'],
 })
 export class HombreComponent {
   
