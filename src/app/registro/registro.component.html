@@ -1,1 +1,29 @@
-<p>registro works!</p>
+<form>
+    <div>
+      <label>
+        Nombre
+      </label>
+      <br>
+      <input type="text" [(ngModel)]="form.nombre"  name="nombre" placeholder="Escribe tu nombre.">
+      <br><br>
+      <label>
+        Correo Electronico
+      </label>
+      <br>
+      <input type="email" [(ngModel)]="form.correo" name="correo" placeholder="Escribe tu correo.">
+      <br><br>
+      <label>
+        Contraseña
+    </label>
+    <br>
+    <input type="password" [(ngModel)]="form.contrasena" name="contrasena" placeholder="Debe obtener 8 caracteres.">
+    <br><br>
+    <label>
+        Confirma tu Contraseña
+        </label>
+        <br>
+        <input type="password" [(ngModel)]="form.ccontrasena" name="ccontrasena" placeholder="Debe obtener 8 caracteres.">
+        <br><br>
+        <button (click)="registrarme()">Registrarme <i class="fas fa-sing-in-alt"></i></button>
+  </div>
+  </form>

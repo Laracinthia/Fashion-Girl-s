@@ -23,7 +23,7 @@ import { RebajasComponent } from './content/rebajas/rebajas.component';
 import { AccesoriosComponent } from './content/accesorios/accesorios.component';
 import { ZapatosComponent } from './content/zapatos/zapatos.component';
 import { RopadeportivaComponent } from './content/ropadeportiva/ropadeportiva.component';
-
+import { FormsModule } from '@angular/forms';
 const appRoutes: Routes = [
   {path : 'inicio', component : InicioComponent},
   {path : 'mujer',component : MujerComponent},
@@ -62,7 +62,8 @@ const appRoutes: Routes = [
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterModule.forRoot(appRoutes,{enableTracing:true})
+    RouterModule.forRoot(appRoutes,{enableTracing:true}),
+    FormsModule
   ],
   providers: [
     CargarscriptsService
