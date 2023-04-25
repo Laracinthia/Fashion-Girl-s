@@ -3,31 +3,33 @@
     <div>
       <br><br>
       <br><br>
+      <section class ="form-register">
       <label>
         Nombre
       </label>
       <br>
-      <input type="text" [(ngModel)]="form.nombre"  name="nombre" placeholder="Escribe tu nombre.">
+      <input class="controls" type="text" [(ngModel)]="form.nombre"  name="nombre" placeholder="Escribe tu nombre.">
       <br><br>
       <label>
         Correo Electronico
       </label>
       <br>
-      <input type="email" [(ngModel)]="form.correo" name="correo" placeholder="Escribe tu correo.">
+      <input class="controls" type="email" [(ngModel)]="form.correo" name="correo" placeholder="Escribe tu correo.">
       <br><br>
       <label>
         Contraseña
     </label>
     <br>
-    <input type="password" [(ngModel)]="form.contrasena" name="contrasena" placeholder="Debe obtener 8 caracteres.">
+    <input class="controls" type="password" [(ngModel)]="form.contrasena" name="contrasena" placeholder="Debe obtener 8 caracteres.">
     <br><br>
     <label>
         Confirma tu Contraseña
         </label>
         <br>
-        <input type="password" [(ngModel)]="ccontrasena" name="ccontrasena" placeholder="Debe obtener 8 caracteres.">
+        <input class="controls" type="password" [(ngModel)]="ccontrasena" name="ccontrasena" placeholder="Debe obtener 8 caracteres.">
         <br><br>
-        <button (click)="registrarme()">Registrarme <i class="fas fa-sing-in-alt"></i></button>
+        <button class="botons" (click)="registrarme()">Registrarme <i class="fas fa-sing-in-alt"></i></button>
+        </section>
   </div>
   </form>
 
